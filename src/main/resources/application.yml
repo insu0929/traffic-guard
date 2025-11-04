@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: traffic-guard
+  redis:
+    properties:
+      master-host: redis://localhost:6379
+      slave-host: redis://localhost:6379
+
+logging:
+  level:
+    com.trafficguard: DEBUG
+    root: INFO
+
+
