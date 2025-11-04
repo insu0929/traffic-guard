@@ -4,6 +4,8 @@ Spring Boot 기반의 Rate Limiting 및 Traffic Control 라이브러리입니다
 
 ## 주요 기능
 
+<img width="1521" height="820" alt="image" src="https://github.com/user-attachments/assets/93087f7f-80f7-46d2-8793-cd789b4eb489" />
+
 - **Token Bucket 알고리즘**: Redis Lua 스크립트를 사용한 효율적인 Rate Limiting
 - **사용자별 Rate Limiting**: 사용자 ID 기반의 개별 Rate Limit 관리
 - **다양한 시간 단위 지원**: 초, 분, 시간, 일 단위 Rate Limit 설정
