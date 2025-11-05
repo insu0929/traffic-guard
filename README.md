@@ -2,8 +2,9 @@
 
 Spring Boot 기반의 Rate Limiting 및 Traffic Control 라이브러리입니다. Redis를 활용한 Token Bucket 알고리즘을 사용하여 사용자별 Rate Limiting을 제공합니다.
 
-## 주요 기능
+## 개요
 
+### 아키텍처
 <img width="1521" height="820" alt="image" src="https://github.com/user-attachments/assets/93087f7f-80f7-46d2-8793-cd789b4eb489" />
 
 - **Token Bucket 알고리즘**: Redis Lua 스크립트를 사용한 효율적인 Rate Limiting
@@ -12,6 +13,9 @@ Spring Boot 기반의 Rate Limiting 및 Traffic Control 라이브러리입니다
 - **유연한 사용자 식별**: HTTP 헤더 또는 Request Body에서 사용자 ID 추출
 - **Rate Limit 헤더**: 표준 Rate Limit 응답 헤더 제공
 - **AOP 기반**: 어노테이션 기반의 간편한 사용법
+
+### 실행흐름
+<img width="982" height="2678" alt="image" src="https://github.com/user-attachments/assets/e1813a59-99cf-40b8-977c-b98deede5174" />
 
 ## 사용 방법
 
@@ -155,9 +159,5 @@ docker run -d -p 6379:6379 redis:alpine
 # 테스트 실행
 ./gradlew test
 ```
-
-## 라이선스
-
-이 프로젝트는 MIT 라이선스를 따릅니다.
 
 
